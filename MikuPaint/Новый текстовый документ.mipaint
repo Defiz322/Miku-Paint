@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "app": "MikuPaint",
+  "created": "2026-10-26T00:00:00",
+  "canvas_width": 800,
+  "canvas_height": 600,
+  "items": [
+    {"type": "rectangle", "coords": [0, 0, 800, 600], "fill": "#f4f8ff", "outline": "#f4f8ff", "width": 0},
+
+    {"type": "polygon", "coords": [250, 250, 210, 520, 300, 470, 330, 540], "fill": "#39c5bb", "outline": "#2a9d94", "width": 2, "smooth": true},
+    {"type": "polygon", "coords": [550, 250, 590, 520, 500, 470, 470, 540], "fill": "#39c5bb", "outline": "#2a9d94", "width": 2, "smooth": true},
+    {"type": "polygon", "coords": [260, 300, 230, 470, 290, 450], "fill": "#5fe0d6", "outline": "", "width": 0, "smooth": true},
+    {"type": "polygon", "coords": [540, 300, 570, 470, 510, 450], "fill": "#5fe0d6", "outline": "", "width": 0, "smooth": true},
+
+    {"type": "oval", "coords": [280, 130, 520, 400], "fill": "#39c5bb", "outline": "#2a9d94", "width": 2},
+    {"type": "oval", "coords": [300, 150, 500, 330], "fill": "#39c5bb", "outline": "", "width": 0},
+
+    {"type": "oval", "coords": [345, 185, 455, 315], "fill": "#ffe3d3", "outline": "#e8c4b0", "width": 2},
+    {"type": "oval", "coords": [355, 275, 375, 295], "fill": "#ffb3c1", "outline": "", "width": 0},
+    {"type": "oval", "coords": [425, 275, 445, 295], "fill": "#ffb3c1", "outline": "", "width": 0},
+
+    {"type": "polygon", "coords": [350, 165, 340, 250, 365, 240, 370, 200], "fill": "#39c5bb", "outline": "#2a9d94", "width": 2, "smooth": true},
+    {"type": "polygon", "coords": [400, 160, 395, 245, 415, 245, 415, 175], "fill": "#39c5bb", "outline": "#2a9d94", "width": 2, "smooth": true},
+    {"type": "polygon", "coords": [440, 165, 460, 250, 435, 245, 430, 200], "fill": "#39c5bb", "outline": "#2a9d94", "width": 2, "smooth": true},
+    {"type": "polygon", "coords": [320, 190, 305, 300, 335, 280, 345, 220], "fill": "#39c5bb", "outline": "#2a9d94", "width": 2, "smooth": true},
+    {"type": "polygon", "coords": [470, 190, 495, 300, 465, 280, 455, 220], "fill": "#39c5bb", "outline": "#2a9d94", "width": 2, "smooth": true},
+
+    {"type": "oval", "coords": [360, 225, 392, 258], "fill": "#ffffff", "outline": "#2a9d94", "width": 2},
+    {"type": "oval", "coords": [368, 232, 384, 251], "fill": "#39c5bb", "outline": "", "width": 0},
+    {"type": "oval", "coords": [373, 237, 380, 246], "fill": "#0a0a0f", "outline": "", "width": 0},
+    {"type": "oval", "coords": [371, 235, 375, 240], "fill": "#ffffff", "outline": "", "width": 0},
+
+    {"type": "oval", "coords": [408, 225, 440, 258], "fill": "#ffffff", "outline": "#2a9d94", "width": 2},
+    {"type": "oval", "coords": [416, 232, 432, 251], "fill": "#39c5bb", "outline": "", "width": 0},
+    {"type": "oval", "coords": [421, 237, 428, 246], "fill": "#0a0a0f", "outline": "", "width": 0},
+    {"type": "oval", "coords": [419, 235, 423, 240], "fill": "#ffffff", "outline": "", "width": 0},
+
+    {"type": "line", "coords": [355, 220, 368, 216], "fill": "#2a9d94", "width": 3, "capstyle": "round", "joinstyle": "round", "smooth": true},
+    {"type": "line", "coords": [432, 216, 445, 220], "fill": "#2a9d94", "width": 3, "capstyle": "round", "joinstyle": "round", "smooth": true},
+    {"type": "line", "coords": [384, 270, 396, 276, 408, 270], "fill": "#c46a7a", "width": 2, "capstyle": "round", "joinstyle": "round", "smooth": true},
+    {"type": "line", "coords": [376, 300, 424, 300], "fill": "#b85a6a", "width": 3, "capstyle": "round", "joinstyle": "round", "smooth": true},
+
+    {"type": "rectangle", "coords": [300, 205, 330, 235], "fill": "#ff6b9d", "outline": "#d94f7f", "width": 2},
+    {"type": "rectangle", "coords": [470, 205, 500, 235], "fill": "#ff6b9d", "outline": "#d94f7f", "width": 2},
+    {"type": "line", "coords": [305, 220, 325, 220], "fill": "#ffffff", "width": 2, "capstyle": "round", "joinstyle": "round", "smooth": false},
+    {"type": "line", "coords": [475, 220, 495, 220], "fill": "#ffffff", "width": 2, "capstyle": "round", "joinstyle": "round", "smooth": false},
+
+    {"type": "polygon", "coords": [330, 330, 470, 330, 500, 400, 300, 400], "fill": "#8080a0", "outline": "#5f5f80", "width": 2, "smooth": false},
+    {"type": "polygon", "coords": [350, 330, 400, 380, 400, 330], "fill": "#ffffff", "outline": "#c0c0d0", "width": 2, "smooth": false},
+    {"type": "polygon", "coords": [450, 330, 400, 380, 400, 330], "fill": "#ffffff", "outline": "#c0c0d0", "width": 2, "smooth": false},
+
+    {"type": "polygon", "coords": [395, 370, 405, 370, 410, 430, 400, 445, 390, 430], "fill": "#39c5bb", "outline": "#2a9d94", "width": 2, "smooth": false},
+
+    {"type": "line", "coords": [300, 400, 280, 520], "fill": "#39c5bb", "width": 8, "capstyle": "round", "joinstyle": "round", "smooth": true},
+    {"type": "line", "coords": [500, 400, 520, 520], "fill": "#39c5bb", "width": 8, "capstyle": "round", "joinstyle": "round", "smooth": true},
+    {"type": "line", "coords": [280, 520, 290, 540], "fill": "#2a9d94", "width": 6, "capstyle": "round", "joinstyle": "round", "smooth": true},
+    {"type": "line", "coords": [520, 520, 510, 540], "fill": "#2a9d94", "width": 6, "capstyle": "round", "joinstyle": "round", "smooth": true},
+
+    {"type": "text", "coords": [250, 150], "text": "39", "fill": "#ff6b9d", "font": "Arial 14 bold"},
+    {"type": "text", "coords": [550, 150], "text": "39", "fill": "#ff6b9d", "font": "Arial 14 bold"},
+    {"type": "text", "coords": [400, 480], "text": "HATSUNE MIKU", "fill": "#39c5bb", "font": "Arial 16 bold"}
+  ]
+}

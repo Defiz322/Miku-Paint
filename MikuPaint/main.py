@@ -551,6 +551,9 @@ class MikuPaint:
                 config['coords'] = coords
                 config['fill'] = self.canvas.itemcget(item, 'fill')
                 config['width'] = self.canvas.itemcget(item, 'width')
+                config['capstyle'] = self.canvas.itemcget(item, 'capstyle')
+                config['joinstyle'] = self.canvas.itemcget(item, 'joinstyle')
+                config['smooth'] = self.canvas.itemcget(item, 'smooth')
             elif item_type == 'text':
                 config['type'] = 'text'
                 config['coords'] = coords
@@ -563,6 +566,7 @@ class MikuPaint:
                 config['fill'] = self.canvas.itemcget(item, 'fill')
                 config['outline'] = self.canvas.itemcget(item, 'outline')
                 config['width'] = self.canvas.itemcget(item, 'width')
+                config['smooth'] = self.canvas.itemcget(item, 'smooth')
             items.append(config)
         
         state = {
@@ -608,7 +612,16 @@ class MikuPaint:
             elif item['type'] == 'line':
                 self.canvas.create_line(item['coords'],
                                        fill=item.get('fill', 'black'),
-                                       width=item.get('width', 1))
+                                       width=item.get('width', 1),
+                                       capstyle=item.get('capstyle', 'butt'),
+                                       joinstyle=item.get('joinstyle', 'round'),
+                                       smooth=item.get('smooth', False))
+            elif item['type'] == 'polygon':
+                self.canvas.create_polygon(item['coords'],
+                                          fill=item.get('fill', ''),
+                                          outline=item.get('outline', ''),
+                                          width=item.get('width', 1),
+                                          smooth=item.get('smooth', False))
             elif item['type'] == 'text':
                 self.canvas.create_text(item['coords'][0], item['coords'][1],
                                        text=item.get('text', ''),
@@ -651,6 +664,14 @@ class MikuPaint:
             elif item_type == 'line':
                 config['fill'] = self.canvas.itemcget(item, 'fill')
                 config['width'] = self.canvas.itemcget(item, 'width')
+                config['capstyle'] = self.canvas.itemcget(item, 'capstyle')
+                config['joinstyle'] = self.canvas.itemcget(item, 'joinstyle')
+                config['smooth'] = self.canvas.itemcget(item, 'smooth')
+            elif item_type == 'polygon':
+                config['fill'] = self.canvas.itemcget(item, 'fill')
+                config['outline'] = self.canvas.itemcget(item, 'outline')
+                config['width'] = self.canvas.itemcget(item, 'width')
+                config['smooth'] = self.canvas.itemcget(item, 'smooth')
             elif item_type == 'text':
                 config['text'] = self.canvas.itemcget(item, 'text')
                 config['fill'] = self.canvas.itemcget(item, 'fill')
@@ -709,7 +730,16 @@ class MikuPaint:
                 elif item_type == 'line':
                     self.canvas.create_line(coords,
                                            fill=item.get('fill', 'black'),
-                                           width=item.get('width', 1))
+                                           width=item.get('width', 1),
+                                           capstyle=item.get('capstyle', 'butt'),
+                                           joinstyle=item.get('joinstyle', 'round'),
+                                           smooth=item.get('smooth', False))
+                elif item_type == 'polygon':
+                    self.canvas.create_polygon(coords,
+                                               fill=item.get('fill', ''),
+                                               outline=item.get('outline', ''),
+                                               width=item.get('width', 1),
+                                               smooth=item.get('smooth', False))
                 elif item_type == 'text':
                     self.canvas.create_text(coords[0], coords[1],
                                            text=item.get('text', ''),
